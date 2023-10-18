@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+.container {
+    display: flex;
+    background-color: #333;
+
+    padding: 100px;
+    padding-left: 10%;
+    width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.left-sidebar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-container {
+    background-color: #555;
+    padding: 10px;
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.music-player {
+    flex: 1;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Your existing CSS code ... */
+
+/* Initially hide additional tracks */
+.tracklist-hidden li {
+    display: none;
+}
+
+/* Style for the "Show More" button */
+#show-more {
+    background-color: #1db954;
+    color: #fff;
+    position: relative;
+    left: 40%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+/* Your existing CSS code ... */
+
+
+.controls button {
+    padding: 12px 24px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.controls button:hover {
+    background-color: #20d760;
+}
+/* Your existing CSS code ... */
+
+/* Custom styling for the audio player */
+.custom-audio {
+    width: 30%;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+/* Style for audio controls */
+.custom-audio::-webkit-media-controls-panel {
+    background-color: #1db954;
+    border-radius: 10px;
+}
+
+.custom-audio::-webkit-media-controls-play-button,
+.custom-audio::-webkit-media-controls-pause-button {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 40px;
+}
+
+.custom-audio::-webkit-media-controls-mute-button,
+.custom-audio::-webkit-media-controls-volume-slider {
+    display: none; /* Hiding mute button and volume slider */
+}
+
+.custom-audio::-webkit-media-controls-current-time-display,
+.custom-audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+    font-size: 16px;
+}
+
+.custom-audio::-webkit-media-controls-elapsed-time-display {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.custom-audio::-webkit-media-controls-timeline,
+.custom-audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+
+.custom-audio::-webkit-media-controls-seek-back-button,
+.custom-audio::-webkit-media-controls-seek-forward-button {
+    display: none; /* Hiding seek buttons */
+}
+
+.custom-audio::-webkit-media-controls-fullscreen-button {
+    display: none; /* Hiding fullscreen button */
+}
+
+
+.playlist {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px;
+    background-color: #333;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    padding: 10px 20px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+li button:hover {
+    background-color: #20d760;
+}
+
+audio {
+    width: 100%;
+    background-color: #000;
+}
+
+#add-track {
+    padding: 12px 24px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    position: relative;
+    left: 35%;
+    margin-left: auto;
+    font-size: 18px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 12px 24px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+
+.controls button:hover {
+    background-color: #20d760;
+}
+
+.controls button#play-pause {
+    background-color: #4caf50;
+}
+
+.controls button#play-pause:hover {
+    background-color: #45a047;
+}
+
+.controls button#stop {
+    background-color: #f44336;
+}
+
+.controls button#stop:hover {
+    background-color: #e53935;
+}
